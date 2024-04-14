@@ -1,0 +1,274 @@
+[
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 32,
+            "lr": 0.05,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.4278364613396946,
+        0.849
+    ],
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 64,
+            "lr": 0.05,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.435446572409391,
+        0.8425
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 64,
+            "lr": 0.05,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.4563991419066092,
+        0.851
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 32,
+            "lr": 0.05,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.5174109046011129,
+        0.841
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 32,
+            "lr": 0.01,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.5535324393752592,
+        0.816
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 64,
+            "lr": 0.01,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.5739192037181006,
+        0.8215
+    ],
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 64,
+            "lr": 0.01,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.5899372204621898,
+        0.83
+    ],
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 64,
+            "lr": 0.01,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.646124159012913,
+        0.778
+    ],
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 64,
+            "lr": 0.05,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.6524247012494365,
+        0.775
+    ],
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 32,
+            "lr": 0.01,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.6548399564288931,
+        0.763
+    ],
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 32,
+            "lr": 0.01,
+            "ld": 0.001,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.6616534329582373,
+        0.833
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 32,
+            "lr": 0.05,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.6663029453841358,
+        0.7855
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 64,
+            "lr": 0.05,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.7561855003445752,
+        0.7445
+    ],
+    [
+        {
+            "hidden_size_1": 256,
+            "hidden_size_2": 32,
+            "lr": 0.05,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.765132790460564,
+        0.736
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 32,
+            "lr": 0.01,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        0.8244967306173377,
+        0.779
+    ],
+    [
+        {
+            "hidden_size_1": 128,
+            "hidden_size_2": 64,
+            "lr": 0.01,
+            "ld": 0.005,
+            "input_dim": 784,
+            "activation_1": "relu",
+            "activation_2": "relu",
+            "output_dim": 10,
+            "activation_3": "softmax",
+            "decay_rate": 0.95,
+            "decay_step": 6000
+        },
+        1.1388001964452783,
+        0.639
+    ]
+]
