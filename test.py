@@ -6,7 +6,6 @@ from src.MLPModel import MLPModel
 
 dataloaders_kwargs = {
     "path_dir": "fashion-mnist",
-    "n_valid": 2000,
     "batch_size": 32,
 }
 

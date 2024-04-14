@@ -7,8 +7,8 @@ from src.Optimizer import SGDOptimizer
 from src.Trainer import Trainer
 
 nn_architecture = [
-    {"input_dim": 784, "output_dim": 128, "activation": "relu"},
-    {"input_dim": 128, "output_dim": 32, "activation": "relu"},
+    {"input_dim": 784, "output_dim": 256, "activation": "relu"},
+    {"input_dim": 256, "output_dim": 32, "activation": "relu"},
     {"input_dim": 32, "output_dim": 10, "activation": "softmax"},
 ]  # 神经网络结构参数（包括层数、隐藏层大小、激活函数）
 
@@ -27,7 +27,7 @@ optimizer_kwargs = {
 
 trainer_kwargs = {
     "n_epochs": 100,
-    "eval_step": 10,
+    "eval_step": 5,
 }  # 训练器参数（包括训练轮数、评估步数）
 
 
