@@ -1,0 +1,4 @@
+# NumPy is all you need ^^
+numpy
+matplotlib
+tqdm

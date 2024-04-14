@@ -1,0 +1,7 @@
+# IntelliJ project files
+.idea
+__pycache__
+
+fashion-mnist/*.gz
+models/
+logs/
