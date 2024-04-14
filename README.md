@@ -27,6 +27,10 @@ pip install tqdm
 
 ## How to Run
 
+### 数据下载
+
+从[Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)仓库可以下载Fashion-MNIST数据集，将`fashion-mnist/data/fashion`下的四个`.gz`文件移至本项目的`fashion-mnist`目录下即可
+
 ### 模型训练
 
 * 进入 [`train.py`](train.py) 修改以下部分（可选）：
