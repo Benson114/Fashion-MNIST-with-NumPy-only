@@ -40,23 +40,36 @@ class GridSearcher:
         根据超参数组合生成神经网络结构和优化器参数
         :param combination: 超参数组合
         """
-        nn_architecture = [
-            {
-                "input_dim": combination["input_dim"],
+        n_layers = sum([1 for key in combination.keys() if "hidden_size" in key]) + 1
+        nn_architecture = []
+        if n_layers == 1:
+            layer = {
+                "input_dim": 784,
+                "output_dim": 10,
+                "activation": combination["activation_1"],
+            }
+            nn_architecture.append(layer)
+        elif n_layers > 1:
+            layer = {
+                "input_dim": 784,
                 "output_dim": combination["hidden_size_1"],
-                "activation": combination["activation_1"]
-            },
-            {
-                "input_dim": combination["hidden_size_1"],
-                "output_dim": combination["hidden_size_2"],
-                "activation": combination["activation_2"]
-            },
-            {
-                "input_dim": combination["hidden_size_2"],
-                "output_dim": combination["output_dim"],
-                "activation": combination["activation_3"]
-            },
-        ]
+                "activation": combination["activation_1"],
+            }
+            nn_architecture.append(layer)
+            for i in range(1, n_layers - 1):
+                layer = {
+                    "input_dim": combination[f"hidden_size_{i}"],
+                    "output_dim": combination[f"hidden_size_{i + 1}"],
+                    "activation": combination[f"activation_{i + 1}"],
+                }
+                nn_architecture.append(layer)
+            layer = {
+                "input_dim": combination[f"hidden_size_{n_layers - 1}"],
+                "output_dim": 10,
+                "activation": combination[f"activation_{n_layers}"],
+            }
+            nn_architecture.append(layer)
+
         optimizer_kwargs = {
             "lr": combination["lr"],
             "ld": combination["ld"],

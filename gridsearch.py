@@ -1,12 +1,14 @@
+import json
+
 from src.GridSearch import GridSearcher
 
 hyper_param_defaults = {
     "input_dim": 784,
     "hidden_size_1": 128,
-    "activation_1": "relu",
     "hidden_size_2": 32,
-    "activation_2": "relu",
     "output_dim": 10,
+    "activation_1": "relu",
+    "activation_2": "relu",
     "activation_3": "softmax",
     "lr": 0.05,
     "ld": 0.001,
@@ -22,7 +24,7 @@ dataloader_kwargs = {
 
 trainer_kwargs = {
     "n_epochs": 10,
-    "eval_step": 10,
+    "eval_step": 100,  # 搜索超参数组合不需要在训练过程中评估
 }  # 训练器参数（包括训练轮数、评估步数）
 
 
@@ -35,7 +37,8 @@ def main():
     }
     searcher = GridSearcher(hyper_param_opts, hyper_param_defaults)
     results = searcher.search(dataloader_kwargs, trainer_kwargs, metric="loss")
-    print(results)
+    with open("gridsearch_results.json", "w") as f:
+        json.dump(results, f, indent=4)
 
 
 if __name__ == "__main__":
