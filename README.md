@@ -130,6 +130,10 @@ pip install tqdm
 python gridsearch.py
 ```
 
-超参数组合的搜索结果会自动保存在 [`gridsearch_results.json`](gridsearch_results.json) 
+超参数组合的搜索结果会自动保存在 [`gridsearch_results.json`](gridsearch_results.json)
+
+### ParamVis
+
+[`utils/ParamVis.py`](utils/ParamVis.py)提供了对模型网络初始化和训练后各层参数的可视化代码（包括直方图和热力图）
 
 ### 更多代码细节的说明详见报告
