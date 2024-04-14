@@ -1,6 +1,6 @@
 import json
 
-from src.GridSearch import GridSearcher
+from src.GridSearcher import GridSearcher
 
 hyper_param_defaults = {
     "input_dim": 784,
