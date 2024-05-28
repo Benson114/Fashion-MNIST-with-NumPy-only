@@ -1,6 +1,6 @@
 # Fashion-MNIST with NumPy only
 
-## Instruction
+## Introduction
 
 本项目为复旦大学研究生课程DATA620004——神经网络和深度学习作业《从零开始构建三层神经网络分类器，实现图像分类》的代码仓库
 
